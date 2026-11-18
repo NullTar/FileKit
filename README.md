@@ -6,13 +6,10 @@ It aims to simplify common file operations while maintaining a clean API and all
 
 ## Features
 
-· File Management — Simplified file and directory operations.
-
-· Path Management — Convenient path representation and manipulation through File.Path.
-
-· Response Handling — Unified operation responses through File.Response.
-
-· Custom Logging — Inject your own logging implementation using FileLogging.
+- File Management — Simplified file and directory operations.
+- Path Management — Convenient path representation and manipulation through File.Path.
+- Response Handling — Unified operation responses through File.Response.
+- Custom Logging — Inject your own logging implementation using FileLogging.
 
 
 ## Swift Package Manager
