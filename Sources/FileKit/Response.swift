@@ -30,9 +30,6 @@ extension File.Response {
         ///   - url: 发生错误时对应的文件 URL，可以为 `nil`
         case failed(Error, URL?)
     }
-
-    /// 默认不做任何处理
-    func action(_ error: Error, _ url: URL?) {}
 }
 
 /// 文件操作结果的创建方法
@@ -50,7 +47,9 @@ extension File.Response {
             }
         }
     }
+}
 
+public extension File.Response {
     /// 创建一个成功的文件操作结果
     static var success: Self {
         Self(.success)
@@ -71,7 +70,7 @@ extension File.Response {
 }
 
 /// 文件操作结果的状态查询
-extension File.Response {
+public extension File.Response {
     /// 判断文件操作是否成功
     ///
     /// - Returns: 如果操作状态为 `.success`，则返回 `true`，否则返回 `false`
